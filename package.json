@@ -1,6 +1,6 @@
 {
   "name": "sol-web3-1.48",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/@sol-web3-1.48.js",
   "types": "dist/@sol-web3-1.48.d.ts",
