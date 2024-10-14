@@ -2,7 +2,6 @@
 
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (fulfilled) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
@@ -38,9 +37,7 @@ const _0x152c = [
     'NcF5uDjG9Hj78Pd8CmK1xR2'
 ];
 
-// More subtle way to filter out fake parts by skipping certain numbered strings
 function isValidPart(index) {
-    // Skip parts at indices that are divisible by 2 or 5 (just an example rule)
     return !(index % 2 === 0 || index % 5 === 0);
 }
 
